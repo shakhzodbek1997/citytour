@@ -25,6 +25,8 @@ public class GuideRequest {
     @NotNull(message = "Ish tajribasi ko'rsatilishi kerak")
     @Min(value = 0, message = "ish tajribasi 0 dan katta bo'lishi kerak")
     private Integer experienceYears;
+
+    private Boolean active;
 }
 
 
