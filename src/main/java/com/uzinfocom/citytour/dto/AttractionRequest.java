@@ -22,8 +22,8 @@ public class AttractionRequest {
     private Double latitude;
 
     @NotNull(message = "Longitude ko'rsatilishi shart")
-    @Min(value = 37, message = "Longitude 37.0 dan kichik bolishi mumkin meas")
-    @Max(value = 46, message = "Longitude 46 dan katta bolishi mumkin emas")
+    @Min(value = 55, message = "Longitude 55.0 dan kichik bolishi mumkin meas")
+    @Max(value = 74, message = "Longitude 74 dan katta bolishi mumkin emas")
     private Double longitude;
 
     @NotNull(message = "Kategoriya tanlanishi shart")

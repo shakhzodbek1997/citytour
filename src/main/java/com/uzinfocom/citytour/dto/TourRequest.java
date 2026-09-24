@@ -34,6 +34,5 @@ public class TourRequest {
     @DecimalMin(value = "0.01", message = "Narx 0 dan katta bo'lishi kerak")
     private BigDecimal pricePerSeat;
 
-    @Valid // DTO ichida boshqa DTO list kelganda uning ichidagi validatsiyalar ishalshi uchun qoyildi
-    private List<TourStopRequest> stops;
+    private List<@Valid TourStopRequest> stops;
 }

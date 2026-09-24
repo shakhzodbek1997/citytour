@@ -15,7 +15,7 @@ public class GuideRequest {
     private String fullName;
 
     @NotBlank(message = "Tel raqami bo'sh bo'lishi mumkin emas!")
-    @Pattern(regexp = "^\\\\+?[0-9]{9,15}$", message="Tel nomeri to'g'ri formatda bolishi kerak")
+    @Pattern(regexp = "^\\+?[0-9]{9,15}$", message="Tel nomeri to'g'ri formatda bolishi kerak")
     private String phone;
 
     @NotNull(message = "Tilar ro'yxati bo'sh bo'lishi mumkin emas")
