@@ -20,4 +20,6 @@ public class TourResponse {
     private BigDecimal pricePerSeat;
     private TourStatus status;
     private List<TourStopResponse> stops;
+    private Integer bookedSeats;
+    private Integer freeSeats;
 }
