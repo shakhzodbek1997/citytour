@@ -6,6 +6,7 @@ import com.uzinfocom.citytour.entity.enums.Language;
 import com.uzinfocom.citytour.service.GuideService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.springdoc.core.annotations.ParameterObject;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
@@ -33,7 +34,7 @@ public class GuideController {
     public ResponseEntity<Page<GuideResponse>> getAll(
             @RequestParam(required = false) Boolean active,
             @RequestParam(required = false) Language language,
-            Pageable pageable) {
+            @ParameterObject Pageable pageable) {
         return ResponseEntity.ok(guideService.getAll(active, language, pageable));
     }
 
